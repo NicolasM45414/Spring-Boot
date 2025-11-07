@@ -1,33 +1,42 @@
-<h1 align="center">📝 Sistema de Administración de Tareas</h1> <p align="center"> <b>Trabajo Práctico – Fundamentos de Spring Boot</b><br> <i>Ingeniería en Sistemas de Información – Desarrollo de Software</i> </p>
-🎯 Propósito del Proyecto
+🧾 Sistema de Administración de Tareas
+💼 Trabajo Práctico Integrador – Fundamentos de Spring Boot
 
-El objetivo principal es poner en práctica los conocimientos esenciales de Spring Boot, desarrollando una aplicación profesional para la gestión de tareas (To-Do List), implementando los siguientes conceptos:
+Carrera: Ingeniería en Sistemas de Información
+Materia: Desarrollo de Software
 
-Inyección de dependencias
+🎯 Objetivo Principal
 
-Uso de estereotipos (@Service, @Repository, @Component)
+El propósito de este proyecto es aplicar los fundamentos esenciales de Spring Boot mediante la creación de una aplicación profesional para la gestión de tareas (To-Do List).
 
-Configuración mediante application.properties
+Durante el desarrollo se implementan los siguientes conceptos clave:
 
-Utilización de perfiles (dev y prod) para distintos entornos de ejecución
+💉 Inyección de dependencias
 
-🧠 Descripción General
+🧱 Estereotipos: @Service, @Repository, @Component
 
-El proyecto se basa en un sistema que permite administrar tareas de manera sencilla y eficiente. Entre sus funcionalidades se incluyen:
+⚙️ Configuración externa mediante application.properties
 
-📋 Visualizar el listado de tareas existentes
+🌐 Profiles (dev y prod) para manejar distintos entornos de ejecución
 
-➕ Registrar nuevas tareas
+🧠 Descripción del Proyecto
 
-✅ Cambiar el estado de una tarea a completada
+El sistema permite administrar tareas de manera simple, estructurada y adaptable a diferentes entornos.
+
+Funcionalidades principales:
+
+📋 Listar tareas existentes
+
+➕ Agregar nuevas tareas
+
+✅ Marcar tareas como completadas
 
 📊 Consultar estadísticas de progreso
 
-⚙️ Adaptar la configuración según el entorno de ejecución (desarrollo o producción)
+⚙️ Adaptar comportamiento según el entorno (desarrollo o producción)
 
-Cada perfil modifica ciertos parámetros, como mensajes, límites o niveles de log, en función del Profile seleccionado.
+Cada entorno ajusta sus mensajes, límites y niveles de log según el Profile configurado.
 
-🧩 Organización del Proyecto
+🧩 Estructura del Proyecto
 com.utn.tareas
 ├── model
 │   ├── Tarea.java
@@ -41,16 +50,16 @@ com.utn.tareas
 │   └── MensajeProdService.java
 └── TareasApplication.java
 
-⚙️ Tecnologías Empleadas
+⚙️ Tecnologías Utilizadas
 Tecnología	Versión	Descripción
-☕ Java	17+	Lenguaje principal del proyecto
-🧩 Spring Boot	3.x	Framework base para el backend
-⚙️ Maven	-	Herramienta para la gestión de dependencias
-✨ Lombok	-	Simplifica y reduce código repetitivo
-🔁 Spring Boot DevTools	-	Permite recarga automática en tiempo de desarrollo
-🚀 Instrucciones para la Ejecución
+☕ Java	17+	Lenguaje principal
+🧩 Spring Boot	3.x	Framework para el desarrollo backend
+⚙️ Maven	-	Sistema de gestión de dependencias
+✨ Lombok	-	Reducción del código boilerplate
+🔁 Spring Boot DevTools	-	Recarga automática en desarrollo
+🚀 Ejecución del Proyecto
 
-Para ejecutar el proyecto mediante Maven, usar el siguiente comando:
+Para ejecutar el proyecto con Maven, usar el siguiente comando:
 
 mvn spring-boot:run
 
@@ -60,7 +69,7 @@ cd tareas-springboot
 
 🔧 Configuración de Perfiles
 
-El comportamiento de la aplicación se define según el profile activo, especificado en el archivo:
+El comportamiento de la aplicación se determina según el profile activo definido en el archivo:
 
 src/main/resources/application.properties
 
@@ -74,6 +83,8 @@ app.max-tareas=10
 app.mostrar-estadisticas=true
 logging.level.com.utn.tareas=DEBUG
 
+
+Características:
 
 ✅ Mensajes detallados
 
@@ -90,30 +101,32 @@ app.mostrar-estadisticas=false
 logging.level.com.utn.tareas=ERROR
 
 
+Características:
+
 🚀 Mensajes simplificados
 
 📉 Estadísticas deshabilitadas
 
-📈 Mayor capacidad de tareas
+📈 Mayor cantidad máxima de tareas
 
-📸 Ejemplos en Consola (Profiles)
+🖼️ Evidencias en Consola
+🧱 Perfil de Producción
 
-Perfil de Producción:
-<img width="654" height="555" alt="produccion" src="https://github.com/user-attachments/assets/448e7180-7a39-459a-b1a4-0e403bf672a3" />
+💻 Perfil de Desarrollo
 
-Perfil de Desarrollo:
-<img width="646" height="621" alt="desarrollo" src="https://github.com/user-attachments/assets/c3ac1d29-6163-4791-8986-702ed5a74d79" />
+🧾 Conclusiones
 
-🧾 Conclusión
+El desarrollo de este proyecto me permitió comprender en profundidad el ecosistema de Spring Boot y su relevancia en el desarrollo de aplicaciones modernas con Java.
 
-Durante el desarrollo de este trabajo integrador pude profundizar en el funcionamiento del ecosistema de Spring Boot, comprendiendo por qué se ha convertido en una de las herramientas más potentes para el desarrollo moderno con Java.
+La inyección de dependencias demostró ser clave para lograr un código modular, desacoplado y más fácil de mantener.
 
-La inyección de dependencias resultó clave para entender la importancia de un código desacoplado y modular, mejorando la mantenibilidad y escalabilidad del sistema.
+Por otro lado, la práctica con profiles y configuraciones externas permitió observar cómo un mismo proyecto puede adaptarse fácilmente a diferentes entornos (desarrollo y producción) sin alterar su código fuente.
 
-Asimismo, la configuración por perfiles me permitió experimentar cómo un mismo proyecto puede adaptarse fácilmente a distintos entornos (desarrollo y producción) sin alterar su código base.
+Finalmente, el uso de anotaciones como @Service, @Repository y @Profile reforzó la importancia de las buenas prácticas, la organización del código y la claridad en la arquitectura del proyecto.
 
-Finalmente, reforcé el uso de anotaciones como @Service, @Repository y @Profile, que contribuyen a una estructura más clara y ordenada. Este trabajo me permitió adquirir una visión más profesional sobre las buenas prácticas y arquitectura de aplicaciones con Spring Boot.
+En conjunto, esta experiencia me brindó una visión más profesional y sólida sobre el desarrollo con Spring Boot.
 
 👤 Autor
 
-Nicolas Andres Moreno Coll – Legajo 50989
+Nicolas Andres Moreno Coll 
+Legajo 50989
