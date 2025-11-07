@@ -1,4 +1,4 @@
-<h1 align="center">📝 Sistema de Administración de Tareas</h1> <p align="center"> <b>Trabajo Práctico Integrador – Fundamentos de Spring Boot</b><br> <i>Ingeniería en Sistemas de Información – Desarrollo de Software</i> </p>
+<h1 align="center">📝 Sistema de Administración de Tareas</h1> <p align="center"> <b>Trabajo Práctico – Fundamentos de Spring Boot</b><br> <i>Ingeniería en Sistemas de Información – Desarrollo de Software</i> </p>
 🎯 Propósito del Proyecto
 
 El objetivo principal es poner en práctica los conocimientos esenciales de Spring Boot, desarrollando una aplicación profesional para la gestión de tareas (To-Do List), implementando los siguientes conceptos:
