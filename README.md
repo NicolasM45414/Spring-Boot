@@ -1,10 +1,10 @@
-🧾 Sistema de Administración de Tareas
-💼 Trabajo Práctico Integrador – Fundamentos de Spring Boot
+#🧾 Sistema de Administración de Tareas
+##💼 Trabajo Práctico Integrador – Fundamentos de Spring Boot
 
 Carrera: Ingeniería en Sistemas de Información
 Materia: Desarrollo de Software
 
-🎯 Objetivo Principal
+##🎯 Objetivo Principal
 
 El propósito de este proyecto es aplicar los fundamentos esenciales de Spring Boot mediante la creación de una aplicación profesional para la gestión de tareas (To-Do List).
 
@@ -18,11 +18,11 @@ Durante el desarrollo se implementan los siguientes conceptos clave:
 
 🌐 Profiles (dev y prod) para manejar distintos entornos de ejecución
 
-🧠 Descripción del Proyecto
+##🧠 Descripción del Proyecto
 
 El sistema permite administrar tareas de manera simple, estructurada y adaptable a diferentes entornos.
 
-Funcionalidades principales:
+###Funcionalidades principales:
 
 📋 Listar tareas existentes
 
@@ -36,7 +36,7 @@ Funcionalidades principales:
 
 Cada entorno ajusta sus mensajes, límites y niveles de log según el Profile configurado.
 
-🧩 Estructura del Proyecto
+##🧩 Estructura del Proyecto
 com.utn.tareas
 ├── model
 │   ├── Tarea.java
@@ -50,15 +50,15 @@ com.utn.tareas
 │   └── MensajeProdService.java
 └── TareasApplication.java
 
-⚙️ Tecnologías Utilizadas
+##⚙️ Tecnologías Utilizadas
 Tecnología	Versión	Descripción
 ☕ Java	17+	Lenguaje principal
 🧩 Spring Boot	3.x	Framework para el desarrollo backend
 ⚙️ Maven	-	Sistema de gestión de dependencias
 ✨ Lombok	-	Reducción del código boilerplate
 🔁 Spring Boot DevTools	-	Recarga automática en desarrollo
-🚀 Ejecución del Proyecto
 
+##🚀 Ejecución del Proyecto
 Para ejecutar el proyecto con Maven, usar el siguiente comando:
 
 mvn spring-boot:run
@@ -67,7 +67,7 @@ mvn spring-boot:run
 git clone https://github.com/usuario/tareas-springboot.git
 cd tareas-springboot
 
-🔧 Configuración de Perfiles
+##🔧 Configuración de Perfiles
 
 El comportamiento de la aplicación se determina según el profile activo definido en el archivo:
 
@@ -75,7 +75,7 @@ src/main/resources/application.properties
 
 spring.profiles.active=dev  # o prod
 
-🔹 Entorno de Desarrollo (DEV)
+##🔹 Entorno de Desarrollo (DEV)
 
 Archivo: application-dev.properties
 
@@ -84,7 +84,7 @@ app.mostrar-estadisticas=true
 logging.level.com.utn.tareas=DEBUG
 
 
-Características:
+###Características:
 
 ✅ Mensajes detallados
 
@@ -92,7 +92,7 @@ Características:
 
 💻 Límite reducido de tareas
 
-🔸 Entorno de Producción (PROD)
+##🔸 Entorno de Producción (PROD)
 
 Archivo: application-prod.properties
 
@@ -101,7 +101,7 @@ app.mostrar-estadisticas=false
 logging.level.com.utn.tareas=ERROR
 
 
-Características:
+###Características:
 
 🚀 Mensajes simplificados
 
@@ -114,7 +114,7 @@ Características:
 
 💻 Perfil de Desarrollo
 
-🧾 Conclusiones
+##🧾 Conclusiones
 
 El desarrollo de este proyecto me permitió comprender en profundidad el ecosistema de Spring Boot y su relevancia en el desarrollo de aplicaciones modernas con Java.
 
@@ -126,7 +126,7 @@ Finalmente, el uso de anotaciones como @Service, @Repository y @Profile reforzó
 
 En conjunto, esta experiencia me brindó una visión más profesional y sólida sobre el desarrollo con Spring Boot.
 
-👤 Autor
+##👤 Autor
 
 Nicolas Andres Moreno Coll 
 Legajo 50989
