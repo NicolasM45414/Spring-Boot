@@ -1,10 +1,13 @@
-#🧾 Sistema de Administración de Tareas
-##💼 Trabajo Práctico Integrador – Fundamentos de Spring Boot
+<h1 align="center">🧾 Sistema de Administración de Tareas</h1>
 
-Carrera: Ingeniería en Sistemas de Información
-Materia: Desarrollo de Software
+<p align="center">
+  <b>💼 Trabajo Práctico Integrador – Fundamentos de Spring Boot</b><br>
+  <i>Carrera: Ingeniería en Sistemas de Información-Materia: Desarrollo de Software/i>
+</p>
 
-##🎯 Objetivo Principal
+---
+
+## 🎯 Objetivo
 
 El propósito de este proyecto es aplicar los fundamentos esenciales de Spring Boot mediante la creación de una aplicación profesional para la gestión de tareas (To-Do List).
 
@@ -18,7 +21,9 @@ Durante el desarrollo se implementan los siguientes conceptos clave:
 
 🌐 Profiles (dev y prod) para manejar distintos entornos de ejecución
 
-##🧠 Descripción del Proyecto
+---
+
+## 🧠 Descripción del Proyecto
 
 El sistema permite administrar tareas de manera simple, estructurada y adaptable a diferentes entornos.
 
@@ -36,46 +41,57 @@ El sistema permite administrar tareas de manera simple, estructurada y adaptable
 
 Cada entorno ajusta sus mensajes, límites y niveles de log según el Profile configurado.
 
-##🧩 Estructura del Proyecto
+
+---
+
+## 🧩 Estructura del Proyecto
+
 com.utn.tareas
 ├── model
-│   ├── Tarea.java
-│   └── Prioridad.java
+│ ├── Tarea.java
+│ └── Prioridad.java
 ├── repository
-│   └── TareaRepository.java
+│ └── TareaRepository.java
 ├── service
-│   ├── TareaService.java
-│   ├── MensajeService.java
-│   ├── MensajeDevService.java
-│   └── MensajeProdService.java
+│ ├── TareaService.java
+│ ├── MensajeService.java
+│ ├── MensajeDevService.java
+│ └── MensajeProdService.java
 └── TareasApplication.java
 
-##⚙️ Tecnologías Utilizadas
-Tecnología	Versión	Descripción
-☕ Java	17+	Lenguaje principal
-🧩 Spring Boot	3.x	Framework para el desarrollo backend
-⚙️ Maven	-	Sistema de gestión de dependencias
-✨ Lombok	-	Reducción del código boilerplate
-🔁 Spring Boot DevTools	-	Recarga automática en desarrollo
 
-##🚀 Ejecución del Proyecto
-Para ejecutar el proyecto con Maven, usar el siguiente comando:
+---
 
-mvn spring-boot:run
+## ⚙️ Tecnologías Utilizadas
 
-1️⃣ Clonar el repositorio
+| Tecnología | Versión | Descripción |
+|-------------|----------|-------------|
+| ☕ Java | 17+ | Lenguaje principal |
+| 🧩 Spring Boot | 3.x | Framework para backend |
+| ⚙️ Maven | - | Gestión de dependencias |
+| ✨ Lombok | - | Reducción de código boilerplate |
+| 🔁 Spring Boot DevTools | - | Recarga automática durante desarrollo |
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+Ejecutar con MAVEN -> mvn spring-boot:run
+
+### 1️⃣ Clonar el repositorio
+
 git clone https://github.com/usuario/tareas-springboot.git
 cd tareas-springboot
 
-##🔧 Configuración de Perfiles
+🔧 Configuración de Profiles
 
 El comportamiento de la aplicación se determina según el profile activo definido en el archivo:
 
-src/main/resources/application.properties
+📄 src/main/resources/application.properties
 
 spring.profiles.active=dev  # o prod
 
-##🔹 Entorno de Desarrollo (DEV)
+🔹 Entorno DEV
 
 Archivo: application-dev.properties
 
@@ -84,15 +100,11 @@ app.mostrar-estadisticas=true
 logging.level.com.utn.tareas=DEBUG
 
 
-###Características:
-
 ✅ Mensajes detallados
+📊 Estadísticas habilitadas
+💻 Límite bajo de tareas
 
-📊 Estadísticas activadas
-
-💻 Límite reducido de tareas
-
-##🔸 Entorno de Producción (PROD)
+🔸 Entorno PROD
 
 Archivo: application-prod.properties
 
@@ -101,20 +113,18 @@ app.mostrar-estadisticas=false
 logging.level.com.utn.tareas=ERROR
 
 
-###Características:
+🚀 Mensajes simples
+📉 Sin estadísticas
+📈 Límite alto de tareas
 
-🚀 Mensajes simplificados
 
-📉 Estadísticas deshabilitadas
+## 📸 Capturas de pantalla de la consola con ambos profiles
 
-📈 Mayor cantidad máxima de tareas
+Perfil de Produccion:
+<img width="654" height="555" alt="{41469416-614F-423F-8C4A-FE885E9A9410}" src="https://github.com/user-attachments/assets/448e7180-7a39-459a-b1a4-0e403bf672a3" />
 
-🖼️ Evidencias en Consola
-🧱 Perfil de Producción
-
-💻 Perfil de Desarrollo
-
-##🧾 Conclusiones
+Perfil de Desarrollador:
+<img width="646" height="621" alt="{63D8E219-5C16-410B-B428-9B7ECFA0F229}" src="https://github.com/user-attachments/assets/c3ac1d29-6163-4791-8986-702ed5a74d79" />
 
 El desarrollo de este proyecto me permitió comprender en profundidad el ecosistema de Spring Boot y su relevancia en el desarrollo de aplicaciones modernas con Java.
 
